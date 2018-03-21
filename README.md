@@ -4,7 +4,7 @@ Esse repositório contém notas de aula para um primeiro curso de mestrado em pr
 
 ## Compilando
 
-Para obter o arquivo pdf referente às notas, é necessário primeiramente baixar o repositório em formato `zip` atravéz do seguinte [link](https://github.com/gutosurrex/curso_prob/archive/master.zip). Observe que no Github esse download pode ser feito em um botão localizado na coluna à direita desse repositório.
+Para obter o arquivo pdf referente às notas, é necessário primeiramente baixar o repositório em formato `zip` através do seguinte [link](https://github.com/gutosurrex/curso_prob/archive/master.zip). Observe que no Github esse download pode ser feito em um botão localizado na coluna à direita desse repositório.
 
 Após descompactar a pasta `zip`, o arquivo `Notas_de_aula.tex` pode ser compilado utilizando `pdflatex`.
 
@@ -42,7 +42,7 @@ por diversas discussões, sugestões e correções.
 
 ## Contato
 
-Favor me contactar abrindo uma "Issue" no Github ou atravéz da [minha página](http://w3.impa.br/~augusto).
+Favor me contactar abrindo uma "Issue" no Github ou através da [minha página](http://w3.impa.br/~augusto).
 
 
 

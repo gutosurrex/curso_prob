@@ -12,6 +12,6 @@ Pequenas sugestões poderão ser feitas abrindo "issues".
 Para implementar mudanças, favor modificar o arquivo .tex e me enviar por email a versão modificada.
 Meu endereço eletrônico pode ser encontrado na [minha página](http://w3.impa.br/~augusto).
 
-Quem for familiar com git é convidado a fazer modificações atravéz de "pull requests".
+Quem for familiar com git é convidado a fazer modificações através de "pull requests".
 Caso queira aprender como isso funciona, siga o seguinte [guia](https://guides.github.com/introduction/flow/).
 

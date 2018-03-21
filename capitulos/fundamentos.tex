@@ -13,7 +13,7 @@ Mas como podemos continuar nossa modelagem se nem ao menos podemos dizer qual é
 
 A solução para tal dilema, se baseia no fato de que na verdade nunca estamos interessados no exato resultado do nosso experimento.
 Gostaríamos sim de responder perguntas do tipo: qual é a probabilidade de que chova entre zero e $37mm$?
-Estamos portanto interessados em atribuir probabilidades não a valoers exatos do experimento, mas a certos conjuntos de possíveis valores.
+Estamos portanto interessados em atribuir probabilidades não a valores exatos do experimento, mas a certos conjuntos de possíveis valores.
 Chamamos tais conjuntos de \emph{eventos}. \index{evento}
 
 Voltando ao caso do dado de seis lados, poderíamos nos interessar por exemplo pela probabilidade dos seguintes eventos: o lado sorteado foi ímpar ($P(\{1,3,5\}) = 1/2$) ou o lado serteado foi dois ($P(\{2\}) = 1/6$).
@@ -23,7 +23,7 @@ Vamos agora formalizar a discussão acima com mais calma, sob a ótica dessa teo
 
 \section{Espaços mensuráveis}
 
-Denotaremos sempre por $\Omega$ o nosso \emph{espaço amostral} \index{espaco@espaço!amostral} (à princípio qualquer conjunto).
+Denotaremos sempre por $\Omega$ o nosso \emph{espaço amostral} \index{espaco@espaço!amostral} (a princípio qualquer conjunto).
 Um ponto nesse espaço corresponde por exemplo a um possível resultado do nosso experimento aleatório.
 
 \begin{example} Possíveis exemplos de espaço amostral
@@ -107,13 +107,13 @@ Obviamente, isso nada mais é que uma medida que associa massa um ao espaço tod
   \end{enumerate}
 \end{example}
 Obviamente o terceiro exemplo é bastante artificial (e inútil).
-Mas futuramente, estaremos prontos para introduzir medidas bem interessantes no espaço $(\Omega_3, \mathcal{F}_3)$.
+Mas, futuramente, estaremos prontos para introduzir medidas bem interessantes no espaço $(\Omega_3, \mathcal{F}_3)$.
 
 \begin{proposition}
   Valem as afirmativas seguintes
   \begin{enumerate}[\quad a)]
   \item Se $A \subseteq B$ então $P(A) \leq P(B)$.
-  \item A cota da união: para $I$ finito o enumerável
+  \item A cota da união: para $I$ finito ou enumerável
     \begin{equation}
       P\big(\mcup\nolimits_{i\in I} A_i\big) \leq \smash{\sum\limits_{i\in I}} P(A_i).
     \end{equation}
@@ -127,7 +127,7 @@ Mas futuramente, estaremos prontos para introduzir medidas bem interessantes no 
 \begin{proof}
   $a)$ Como $A \cap (B \setminus A) = \varnothing$, então
     \begin{equation}
-        P(A \cup (B \setminus A))= P(A) + P(B \setminus A).
+        P(B) = P(A \cup (B \setminus A)) = P(A) + P(B \setminus A) \geq P(A).
   \end{equation}
 
   $b)$ $P(A \cup B) = P (A \cup (B \setminus A)) = P(A) + P(B \setminus
@@ -223,7 +223,7 @@ Então se $\sum_i p_i < \infty$, sabemos que certamente não ganharemos infinita
 \section{Sistemas \texorpdfstring{$\lambda$-$\pi$}{lambda-pi}}
 
 Uma importante ferramenta para provar fatos teóricos sobre probabilidades é o Teorema de Dynkin que apresentaremos nessa seção.
-Ele trata de classes de eventos que não são necessariamente $\sigma$-álgebras, mas sistemas $\sigma$ ou $\pi$ como definidos abaixo.
+Ele trata de classes de eventos que não são necessariamente $\sigma$-álgebras, mas sistemas $\lambda$ ou $\pi$ como definidos abaixo.
 
 \begin{definition}
   Dizemos que uma classe $\mathcal{A} \subseteq \mathcal{P}(\Omega)$ é um $\pi$-sistema \index{pi sistema@$\pi$-sistema} se for fechado por interseções finitas, isto é: para todos $A, B \in \mathcal{A}$ temos $A \cap B \in \mathcal{A}$.
@@ -240,7 +240,7 @@ Ele trata de classes de eventos que não são necessariamente $\sigma$-álgebras
 
 \begin{exercise}
   \label{x:lambda_nao_sigma}
-  Dê um exemplo de $\lambda$-sistema que não seja uma $\sigma$-álbebra.
+  Dê um exemplo de $\lambda$-sistema que não seja uma $\sigma$-álgebra.
 \end{exercise}
 
 Definimos para $\mathcal{A} \subseteq \mathcal{P}(~W)$, o menor $\lambda$-sistema contendo $\mathcal{A}$, ou seja
@@ -431,7 +431,7 @@ Fica como exercício verificar que $X_*P$ é de fato uma probabilidade em $E$.
 
 Duas notações importantes nesse contexto são:
 \begin{enumerate}[\quad a)]
-\item Sejam $(\Omega, \mathcal{F}, P)$ e $(\Omega',\mathcal{F}',P')$ dois espaços de probabilidade e $X$ et $Y$ dois elementos aleatórios.
+\item Sejam $(\Omega, \mathcal{F}, P)$ e $(\Omega',\mathcal{F}',P')$ dois espaços de probabilidade e $X$ e $Y$ dois elementos aleatórios.
 Dizemos que $X \stackrel{d}{=} Y$, \index{X d Y@$X \distr Y$} quando $X_*P = Y_*P'$.
 Note que $X$ e $Y$ nem ao menos precisam pertencer ao mesmo espaço de probabilidade para dizermos que são \emph{igualmente distribuídos}, mas precisam ser elementos aleatórios de mesmo tipo (ou seja, possuir o mesmo contradomínio).
 \item Escrevemos $X \distr \mu$, \index{X d mu@$X \distr \mu$} que lê-se \emph{$X$ é distribuída como $\mu$}, onde $\mu$ é uma probabilidade em $E$, caso $X_*P = \mu$.
@@ -453,7 +453,7 @@ Com o tempo, passamos até mesmo a considerar menos relevante a escolha específ
 
 \section{Tópico: O paradoxo de Bertrand}
 
-Vamos estudar um problema que realça a importança do jeito em que escolhemos o espaço amostral.
+Vamos estudar um problema que realça a importância do jeito em que escolhemos o espaço amostral.
 Queremos calcular a probabilidade que uma corda ``uniformemente distribuida'' em um círculo seja maior do que o lado do triângulo equilátero inscrito nesse  círculo (no caso do círculo unitário, o comprimento desse lado vale $\sqrt{3}$).
 Bertrand propôs dois métodos para realizar esse cálculo. \index{Paradoxo de Bertrand@Paradoxo de Bertrand} \footnote{Somos gratos a Hubert Lacoin por sugerir e redigir esse tópico.}
 
@@ -472,7 +472,7 @@ Então a probabilidade vale a razão dessas áreas, que é $1/4$.
 
 \medskip
 
-Obtemos então duas respostas diferente para essa pergunta simples, o que e nada surprendente: $a)$ e $b)$ correspondem a dois experimento
+Obtemos então duas respostas diferentes para essa pergunta simples, o que não é nada surpreendente: $a)$ e $b)$ correspondem a dois experimentos
 diferentes com espaços amostrais diferentes.
 
 

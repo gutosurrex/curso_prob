@@ -160,7 +160,7 @@ Para tanto, precisaremos de uma boa ferramenta para descrever probabilidades em 
 \end{notation}
 
 Lembramos que uma probabilidade em $\mathbb{R}$ é uma função $P:\mathcal{B}(\mathbb{R}) \to [0,1]$ e o domínio dessa função é bastante complicado.
-Por exemplo se quisermos representar uma distribuição de uma variável aleatória no computador atravéz dessa função $P$, teríamos problemas.
+Por exemplo se quisermos representar uma distribuição de uma variável aleatória no computador através dessa função $P$, teríamos problemas.
 Contudo, a função $F_P$ (ou $F_X$) é muito mais simples de ser compreendida ou representada, por seu domínio ser $\mathbb{R}$.
 
 \begin{example}
@@ -444,7 +444,7 @@ Quando $X_1, \dots, X_k$ são elementos aleatórios independentes e com a mesma 
 \end{exercise}
 
 \begin{exercise}
-  Seja um espaço produto de medidas $(\Omega_1 \times \Omega_2, \mathcal{F}_1 \otimes \mathcal{F}_2, \mu_1 \otimes \mu_2)$ e defina a probabilidade $P$ atravéz de
+  Seja um espaço produto de medidas $(\Omega_1 \times \Omega_2, \mathcal{F}_1 \otimes \mathcal{F}_2, \mu_1 \otimes \mu_2)$ e defina a probabilidade $P$ através de
   \begin{equation}
     \d P = \rho(x,y) \d (\mu_1 \otimes \mu_2).
   \end{equation}
@@ -515,7 +515,7 @@ Nessa seção estudaremos como se comportam limites de algumas variáveis aleat�
 
 Apesar de que descreveremos a nossa motivação a partir desse exemplo do estudo de um material radioativo, podemos encontrar aplicações com justificativas bastante semelhantes para outros problemas, como: chegada de carros em um sinal de trânsito, número de mutações em um gene, número de mortes por ano em uma faixa etária...
 
-Digamos que estamos observando um material radioativo que esporadicamente emite fótons que podemos detectar atravéz de um aparelho.
+Digamos que estamos observando um material radioativo que esporadicamente emite fótons que podemos detectar através de um aparelho.
 A razão dessas emissões pode ser aproximada pelo seguinte modelo.
 Na amostra temos um número $n$ grande de átomos instáveis ($n \sim 10^{23}$) e em um determinado tempo de observação, cada um deles tem probabilidade muito baixa de decair emitindo um fóton (digamos $p \sim 10^{-23}$).
 Nesse caso, supondo que todos decidam emitir de maneira independente, temos para $p \in [0,1]$,
@@ -1206,7 +1206,7 @@ Então a distribuição conjunta destes elementos aleatórios é $P_{(X_i)_{i \i
 
 \section{Probabilidades condicionais}
 
-Uma outra maneira de se construir espaços de probabilidade é atravéz de condicionamento, como mostra a seguinte definição.
+Uma outra maneira de se construir espaços de probabilidade é através de condicionamento, como mostra a seguinte definição.
 \begin{definition}
   Se $(\Omega, \mathcal{F}, P)$ é espaço de probabilidade e $B \in \mathcal{F}$ é tal que $P(B) > 0$, então definimos a probabilidade \index{probabilidade!condicional} $P(\cdot | B): \mathcal{F} \to [0,1]$ por
   \begin{equation}
@@ -1332,7 +1332,7 @@ Enunciando hipóteses adequadas se for necessario,  calcule
 
 \subsection{Regra de Bayes}
 
-Frequentemente definimos um espaço de probabilidade atravéz de probabilidades condicionais.
+Frequentemente definimos um espaço de probabilidade através de probabilidades condicionais.
 Consideramos por exemplo um exame médico para detectar uma doença, nesse caso temos
 \begin{equation}
   \Omega = \{(\text{doente}, +), (\text{doente}, -), (\text{saudável}, +), (\text{saudável}, -)\},
@@ -1590,7 +1590,7 @@ Estamos prontos agora para fornecer a
 \end{exercise}
 
 \begin{exercise}
-  Para $0 \leq a < b \leq 1$, definimos a probabilidade $U_{[a,b]}$ em $([0,1], \mathcal{B}([0,1]))$ atravéz da seguinte fórmula $U_{[a,b]}(B) = \mathcal{L}(B \cap [a,b])/(b-a)$.
+  Para $0 \leq a < b \leq 1$, definimos a probabilidade $U_{[a,b]}$ em $([0,1], \mathcal{B}([0,1]))$ através da seguinte fórmula $U_{[a,b]}(B) = \mathcal{L}(B \cap [a,b])/(b-a)$.
   Consideramos também a função $K:[0,1] \times \mathcal{B}([0,1]) \to [0,1]$ dada por $K(x, \cdot) = U_{[0,x]} (\cdot)$, se $x > 0$ e $K(0, \cdot) = \delta_0(\cdot)$.
   \begin{enumerate}[\quad a)]
   \item Mostre que $K$ é um núcleo de transição.
@@ -1840,13 +1840,13 @@ Ele nos dá uma maneira de fatiar um espaço polonês em uma partição de espa�
 \end{lemma}
 
 \begin{proof}
-  Obtemos atravéz da separabilidade de $E$, uma coleção de bolas $(B_i)_{i \geq 1}$ com diâmetros limitados por $r$ e cobrindo $E$.
+  Obtemos através da separabilidade de $E$, uma coleção de bolas $(B_i)_{i \geq 1}$ com diâmetros limitados por $r$ e cobrindo $E$.
   Então definimos
   \begin{equation}
     A_1 = B_1, \quad \text{e} \quad A_n = B_n \setminus \mcup_{i=0}^{n-1} B_i \quad \text{para $n \geq 1$.}
   \end{equation}
 
-  Agora podemos dotar cada um dos $A_i$ com a métrica $d_i$ obtida atravéz do Lema~\ref{l:sub_polones} (observe para tanto que os $A_i$ são dados por interseções de um aberto com um fechado).
+  Agora podemos dotar cada um dos $A_i$ com a métrica $d_i$ obtida através do Lema~\ref{l:sub_polones} (observe para tanto que os $A_i$ são dados por interseções de um aberto com um fechado).
   As propriedades enunciadas no lema são trivialmente satisfeitas.
 \end{proof}
 
@@ -2070,7 +2070,7 @@ Podemos portanto construir $P$ em $\mathbb{Z}^{\mathbb{N}}$ que nos fornece a le
 Chamamos esse processo de passeio aleatório simples simétrico. \index{passeio aleatorio simples@passeio aleatório simples}
 
 Poderíamos estar interessados em várias perguntas sobre esse processo, como por exemplo quão longe esperamos que o passeio aleatório pode ir depois de um determinado tempo?
-Para responder essa e várias outras questões, iremos mostrar outra construção do passeio simples simétrico atravéz de uma soma de variáveis aleatórias.
+Para responder essa e várias outras questões, iremos mostrar outra construção do passeio simples simétrico através de uma soma de variáveis aleatórias.
 
 Introduzimos um espaço de probabilidade $\tilde P$, variáveis $Y_1, Y_2, \dots$ \iid com distribuição $(\delta_{-1} + \delta_{1})/2$ e definimos $S_0 = 0$ e $S_n = Y_1 + \dots + Y_n$.
 
